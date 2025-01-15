@@ -11,11 +11,13 @@ function App () {
         name: "Track 1",
         artist: "Artist 1",
         album: "Album 1",
+        id: 1,
       },
       {
         name: "Track 2",
         artist: "Artist 2",
         album: "Album 2",
+        id: 2,
       }
     ]
   );
@@ -29,7 +31,7 @@ function App () {
         <div className={styles.App}>
           {/* <!-- Add a SearchBar component --> */}
           
-          <div className={styles['.App-playlist']}>
+          <div className={styles['App-playlist']}>
             <SearchResults userSearchResults={searchResults} />
             <Playlist playlistName={playlistName} playlistTracks={playlistTracks} />
           </div>
