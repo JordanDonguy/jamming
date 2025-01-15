@@ -19,6 +19,8 @@ function App () {
       }
     ]
   );
+  const [playlistName, setPlaylistName] = useState("Playlist 1");
+  const [playlistTracks, setPlaylistTracks] = useState(searchResults);
     return (
         <div >
         <h1>
@@ -29,7 +31,7 @@ function App () {
           
           <div className={styles['.App-playlist']}>
             <SearchResults userSearchResults={searchResults} />
-            {/* <!-- Add a Playlist component --> */}
+            <Playlist playlistName={playlistName} playlistTracks={playlistTracks} />
           </div>
         </div>
       </div>
