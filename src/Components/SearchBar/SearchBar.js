@@ -7,10 +7,15 @@ function SearchBar (props) {
   function passTerm(term) {
     props.onSearch(term);
   };
-  
+
+function handleTermChange(event) {
+  setTerm(event.target.value);
+}
+
     return (
         <div className={styles.SearchBar}>
         <input
+          onChange={handleTermChange}
           placeholder="Enter A Song, Album, or Artist"
         />
         <button className={styles.SearchButton} >
