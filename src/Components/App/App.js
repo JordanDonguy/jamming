@@ -23,6 +23,15 @@ function App () {
   );
   const [playlistName, setPlaylistName] = useState("Playlist 1");
   const [playlistTracks, setPlaylistTracks] = useState(searchResults);
+  function addTrack(track) {
+    const isTrack = playlistTracks.find((tracks) => tracks.id === track.id);
+    if (!isTrack) {
+      setPlaylistTracks(prevTrack =>  [...prevTrack, track])
+    } else if (isTrack) {
+      console.log("track already exist");
+    }
+  };
+
     return (
         <div >
         <h1>
@@ -32,7 +41,7 @@ function App () {
           {/* <!-- Add a SearchBar component --> */}
           
           <div className={styles['App-playlist']}>
-            <SearchResults userSearchResults={searchResults} />
+            <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
             <Playlist playlistName={playlistName} playlistTracks={playlistTracks} />
           </div>
         </div>
