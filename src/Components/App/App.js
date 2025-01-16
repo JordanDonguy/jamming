@@ -48,13 +48,17 @@ function App () {
     return trackURIs;
   };
 
+  function search(search) {
+    console.log(search);
+  };
+
     return (
         <div >
         <h1>
           Ja<span className={styles.highlight}>mm</span>ing
         </h1>
         <div className={styles.App}>
-          {/* <!-- Add a SearchBar component --> */}
+          <SearchBar onSearch={search} />
           
           <div className={styles['App-playlist']}>
             <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
