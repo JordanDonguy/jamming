@@ -21,8 +21,10 @@ function App () {
       }
     ]
   );
+
   const [playlistName, setPlaylistName] = useState("Playlist 1");
   const [playlistTracks, setPlaylistTracks] = useState(searchResults);
+
   function addTrack(track) {
     const isTrack = playlistTracks.find((tracks) => tracks.id === track.id);
     if (!isTrack) {
@@ -30,6 +32,11 @@ function App () {
     } else if (isTrack) {
       console.log("track already exist");
     }
+  };
+
+  function removeTrack(track) {
+    const newPlaylist = playlistTracks.filter((tracks) => tracks.id !== track.id);
+    setPlaylistTracks(newPlaylist)
   };
 
     return (
@@ -42,7 +49,7 @@ function App () {
           
           <div className={styles['App-playlist']}>
             <SearchResults userSearchResults={searchResults} onAdd={addTrack} />
-            <Playlist playlistName={playlistName} playlistTracks={playlistTracks} />
+            <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} />
           </div>
         </div>
       </div>

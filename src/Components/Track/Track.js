@@ -6,7 +6,7 @@ function Track(props) {
     if (props.isRemoval) {
       return <button className={styles["Track-action"]}>-</button>
     } else {
-      return <button className={styles["Track-action"]}>+</button>
+      return <button className={styles["Track-action"]} onClick={passTrack}>+</button>
     }
   };
   function passTrack() {
