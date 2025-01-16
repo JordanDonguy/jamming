@@ -18,7 +18,7 @@ function handleTermChange(event) {
           onChange={handleTermChange}
           placeholder="Enter A Song, Album, or Artist"
         />
-        <button className={styles.SearchButton} >
+        <button className={styles.SearchButton} onClick={passTerm}>
           SEARCH
         </button>
       </div>
