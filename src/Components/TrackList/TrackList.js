@@ -6,7 +6,7 @@ function Tracklist (props) {
     return (
         <div className={styles.TrackList}>
           {props.userSearchResults.map((track) => 
-            <Track track={track} key={track.id} />
+            <Track track={track} key={track.id} onAdd={props.onAdd} isRemoval={props.isRemoval} />
           )}
       </div>
     );
