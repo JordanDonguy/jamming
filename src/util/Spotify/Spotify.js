@@ -1,5 +1,3 @@
-import Reat from "react";
-
 const clientId = "5df898c178294bb4ba401a44f07cec2b";
 const redirectURI = "http://localhost:3000";
 
