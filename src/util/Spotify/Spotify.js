@@ -1,7 +1,7 @@
 import Reat from "react";
 
 const clientId = "afc65549b8d34973bc35a0edaac876ad";
-const redirectURI = "http://locolhost:3000";
+const redirectURI = "http://localhost:3000";
 
 let accessToken;
 
@@ -20,7 +20,7 @@ const Spotify = {
             window.history.pushState("Access token", null, "/")
             return accessToken;
         } else if (!accessToken && !tokenInURL) {
-            const redirectURL = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURL}`;
+            const redirectURL = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
             window.location = redirectURL;
         }
     },
@@ -39,8 +39,8 @@ const Spotify = {
             return jsonResponse.tracks.items.map(t => ({
                 id: t.id,
                 name: t.name,
-                artist: t.artist,
-                album: t.album,
+                artist: t.artist[0].name,
+                album: t.album.name,
                 URI: t.URI,
             }))
         })
