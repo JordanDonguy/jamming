@@ -23,5 +23,15 @@ const Spotify = {
             const redirectURL = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURL}`;
             window.location = redirectURL;
         }
+    },
+
+    search(term) {
+        accessToken = Spotify.getAccessToken();
+        return fetch(`https://api.spotify.com/v1/search?type=track&q=${term}`, {
+            method: 'GET',
+            header: {authorization: `bearer ${accessToken}`}
+        })
     }
-}
+};
+
+export default Spotify;
