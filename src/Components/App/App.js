@@ -23,7 +23,7 @@ function App () {
     ]
   );
 
-  const [playlistName, setPlaylistName] = useState("Playlist 1");
+  const [playlistName, setPlaylistName] = useState("New Playlist");
   const [playlistTracks, setPlaylistTracks] = useState(searchResults);
 
   function addTrack(track) {
@@ -53,6 +53,12 @@ function App () {
     Spotify.search(term).then(result => setSearchResults(result))
     console.log(term);
   };
+
+  function savePlaylist() {
+    Spotify.savePlaylist();
+    setPlaylistName("New Playlist");
+    setPlaylistTracks([]);
+  }
 
     return (
         <div >
