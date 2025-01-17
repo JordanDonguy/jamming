@@ -9,7 +9,7 @@ function handleNameChange(event) {
 
   return (
     <div className={styles.Playlist}>
-      <input defaultValue={props.playlistName} onChange={handleNameChange} />
+      <input value={props.playlistName} onChange={handleNameChange} />
       <Tracklist userSearchResults={props.playlistTracks} onRemove={props.onRemove} isRemoval={true} />
       <button className={styles['Playlist-save']} onClick={props.onSave}>
         SAVE TO SPOTIFY
