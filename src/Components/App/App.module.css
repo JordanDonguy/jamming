@@ -18,7 +18,7 @@ h1 {
   background-color: #010c3f;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
+  font-size: calc(1.88rem + 0.6vw);
   color: #fff;
 }
 
