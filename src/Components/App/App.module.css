@@ -15,15 +15,20 @@ html {
 
 h1 {
   padding: .77rem 0;
-  background-color: #010c3f;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to right, rgba(184, 218, 222, 0.1) 10%, rgba(184, 218, 222, 0.7) 40%, rgba(184, 218, 222, 0.7) 60%, rgba(184, 218, 222, 0.1) 90%);
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: calc(1.88rem + 0.6vw);
-  color: #fff;
+  color: black;
+  text-shadow: 1px 1px 1px rgb(244, 244, 244);
 }
 
 h1 .highlight {
-  color: #6c41ec;
+  color: white;
+  text-shadow: 3px 2px 2px black;
 }
 
 h2 {
@@ -35,7 +40,7 @@ h2 {
   height: 100%;
   min-height: 100vh;
   padding: 0 17% 10% 17%;
-  background-image: url('./background_photo_desktop.a0687f3fe6f1303a2d18.jpg');
+  background-image: url('./filip-VHf4jqrUu7g-unsplash.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

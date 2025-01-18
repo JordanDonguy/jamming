@@ -1,7 +1,8 @@
 .Track {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid rgba(256, 256, 256, 0.8);
+    border-bottom: 1px solid black;
+    color: black;
 }
 
 .Track-action {
@@ -11,11 +12,11 @@
     transition: color .25s;
     border: 0px;
     background-color: rgba(0, 0, 0, 0);
-    color: #fff;
+    color: black;
 }
 
 .Track-action:hover {
-    color: rgba(265, 265, 265, .5);
+    color: rgba(265, 265, 265, 1);
 }
 
 .Track-information {
@@ -34,5 +35,4 @@
 .Track-information p {
     font-size: calc(0.7rem + 0.3vw);
     font-weight: 300;
-    color: rgba(256, 256, 256, 0.8);
 }
