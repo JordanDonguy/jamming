@@ -1,5 +1,5 @@
 const clientId = "5df898c178294bb4ba401a44f07cec2b";
-const redirectURI = "http://localhost:3000";
+const redirectURI = "https://jordandonguy.github.io/jamming";
 
 let accessToken;
 
