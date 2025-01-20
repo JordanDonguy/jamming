@@ -12,3 +12,6 @@ Par la suite, les résultats des recherches de titres s'afficheront sur la colon
 
 ## Technologies utilisées
 Ce site a été réaliser via le Framework React du langage de programmation JavaScript et utilise l'API de Spotify.
+
+## Lien vers le site web
+Le site web est déployé à l'adresse suivante : [https://jordandonguy.github.io/jamming/](https://jordandonguy.github.io/jamming/)
