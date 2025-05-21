@@ -1,17 +1,37 @@
-# Jamming
+# 🎵 Jamming
 
-## Desciption du projet
-Ce projet permet de rechercher des titres et de créer des playlist via l'API de Spotify.
+A fun web app that lets you search for songs and create playlists using the **Spotify API**.
 
-## Utilisation
-- La première étape consiste à lancer une recherche de titre via la barre de recherche.
-- Il sera ensuite demandé de se connecter à un compte Spotify.
-Par la suite, les résultats des recherches de titres s'afficheront sur la colonne de gauche et la création de la nouvelle playlist sur la colonne de droite.
-- L'utilisateur pourra ajouter des titres à sa playlist grâce aux petits icones "+" à droite des titres, et il pourra aussi les retirer de la playlist grâce aux petits icones "-" à droite des titres.
-- Enfin, en haut de la colonne de droite, il sera possible de choisir un nom de playlist, puis, à l'aide du bouton en bas de la colonne, de sauvegarder cette playlist sur le compte Spotify de l'utilisateur.
+---
 
-## Technologies utilisées
-Ce site a été réaliser via le Framework React du langage de programmation JavaScript et utilise l'API de Spotify.
+## 🎸 How to Use
 
-## Lien vers le site web
-Le site web est déployé à l'adresse suivante : [https://jordandonguy.github.io/jamming/](https://jordandonguy.github.io/jamming/)
+1. 🔍 Start by searching for songs using the search bar.  
+2. 🔑 You’ll be prompted to log in to your Spotify account.  
+3. 🎶 Search results will appear on the **left column**, while your new playlist is shown on the **right column**.  
+4. ➕ Add songs to your playlist by clicking the **"+"** icons next to each track.  
+5. ➖ Remove songs from your playlist by clicking the **"-"** icons next to tracks in the playlist.  
+6. 📝 At the top of the playlist column, you can name your playlist.  
+7. 💾 Save your playlist to your Spotify account using the button at the bottom of the playlist column.
+
+---
+
+## 🧰 Technologies Used
+
+Built with:
+
+- ⚛️ **React**  
+- 🎧 **Spotify Web API**
+
+This project helped me deepen my understanding of React and working with OAuth and third-party APIs.
+
+---
+
+## 🔗 Live Demo
+
+Check it out here:  
+👉 [https://jordandonguy.github.io/jamming/](https://jordandonguy.github.io/jamming/)
+
+---
+
+Thanks for stopping by! Feel free to share feedback or ideas for new features. 😊
